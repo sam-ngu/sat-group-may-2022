@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .hide{
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- timer -->
+  <section id="section-timer" class="hide">
+    Current Time is <h3 id="timer">60</h3>
+  </section>
+
+  <!-- start game button -->
+  <section id="section-landing" >
+    <h1>Welcome to my quiz!</h1>
+
+    <button id="start-game">Start</button>
+  </section>
+
+
+  <!-- question section -->
+  <section id="section-question" class="hide" >
+
+    <!-- title -->
+    <h1 id="question-title">How are you doin?</h1>
+
+    <!-- choices -->
+    <ul id="question-choices">
+      <li><button class="question-choice">Good</button></li>
+      <li><button class="question-choice">Bloody Good</button></li>
+      <li><button class="question-choice">Hell good</button></li>
+    </ul>
+
+  </section>
+
+  <!-- end game screen (show high score) -->
+  <section id="section-end-game" class="hide">
+
+    <h1>Game Over!</h1>
+    <p>Your score is: <span id="result-span">10</span></p>
+    <!-- form to enter initials -->
+    <!-- button to save the initials -->
+    <form id="form-initials">
+      <input type="text" placeholder="initials here" id="input-initials">
+      <button type="submit"  >Save</button>
+    </form>
+  </section>
+
+
+  <!-- all the high scores page -->
+  <section id="section-highscore" class="hide">
+    <h1>Highscores</h1>
+
+    <ul>
+      <li class="highscore-items">Sam - 10</li>
+      <li class="highscore-items">Alice - 20</li>
+      <li class="highscore-items">Jake - 25</li>
+    </ul>
+
+    <button id="button-home">Back to home</button>
+  </section>
+
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+  
+</body>
+</html>

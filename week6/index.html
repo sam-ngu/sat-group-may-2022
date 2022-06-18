@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+
+
+  <!-- nav -->
+  <nav class="nav d-flex justify-content-center  bg-dark text-white">
+    <h1 >Weather Dashboard</h1>
+  </nav>
+
+
+
+  <!-- container -->
+    <!-- main row -->
+    <section class="row">
+
+      <!-- search bar col -->
+      <!-- list of previous searches -->
+      <div class="col-12 col-sm-3">
+        <form id="search-form" >
+          <div class="form-group">
+            <label for="input-search">Search for a city</label>
+            <input type="text" class="form-control" id="input-search" placeholder="City">
+          </div>
+          <button class="btn btn-primary d-block w-100" type="submit">Search</button>
+        </form>
+
+
+
+      </div>
+
+
+      <div class="col-12 col-sm-9">
+        
+        <!-- result col -->
+        <!-- current day row -->
+        <div class="row">
+          <div class="col-12">
+            
+            <div class="card">
+              <div class="card-body">
+                <h4 id="current-day-city" class="card-title">Alanta 2022-06-01 icon</h4>
+                <div class="card-text">
+                  <p>Temp: <span id="current-day-temp">12C</span> </p>
+                  <p>Wind: <span id="current-day-wind">12</span> </p>
+                  <p>Humidity: <span id="current-day-humidity">12</span> </p>
+                  <p>UV: <span id="current-day-uv">12</span> </p>
+                </div>
+                
+              </div>
+            </div>
+
+          </div>
+        </div>
+      
+        <div class="row">
+          <h2>5-day Forecast:</h2>
+        </div>
+        <!-- 5 day forecast row -->
+        <div class="row forecast-row flex-wrap">
+
+          <div class="col-2 card">
+              <div class="card-body">
+                <h6 class="card-title">2022-06-02 icon</h6>
+                <div class="card-text">
+                  <p>Temp: <span id="current-day-temp">12C</span> </p>
+                  <p>Wind: <span id="current-day-wind">12</span> </p>
+                  <p>Humidity: <span id="current-day-humidity">12</span> </p>
+                </div>
+              </div>
+
+          </div>
+        </div>
+        <!-- 5 cols, each -- card that represent the future weather -->
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.29.3/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  
+  <script src="app.js"></script>
+</body>
+</html>

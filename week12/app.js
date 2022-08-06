@@ -14,6 +14,7 @@ function main(){
         'view all departments',
         'add department',
         'view all roles',
+        'add a role',
         'update employee roles',   // once user selected this, should see a list of employee name to choose from, select the new role
         'exit',
       ]
@@ -23,9 +24,29 @@ function main(){
       type: 'input',
       name: "department_name",
       when: (ans) => ans.operation === 'add department',
-    }
+    },
+    {
+      message: "Which department?",
+      type: 'list',
+      choices: function(){
+
+        return [
+          {
+            name: "Sales",
+            value: 2
+          },
+          {
+            name: "Finance",
+            value: 3
+          },
+        ]
+
+      },
+      name: "department_role",
+      when: (ans) => ans.operation === 'add a role',
+    },
   ]).then(async (ans) => {
-  
+    console.log({ans})
     
     switch (ans.operation){
   
